@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Pokecard.css'
 
 class Pokecard extends Component {
 
@@ -9,10 +10,10 @@ class Pokecard extends Component {
 
     return (
       <div className="Pokecard">
-        <h1>{name}</h1>
+        <h1 className="Pokecard-title">{name}</h1>
         <img src={imgSrc} alt=""/>
-        <h3>Type: {type}</h3>
-        <h3>Exp: {base_experience}</h3>
+        <h3 className="Pokecard-data">Type: {type}</h3>
+        <h3 className="Pokecard-data">Exp: {base_experience}</h3>
 
       </div>
     );
